@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+  <form method="post" action="/submit">
+    <input name="email" type="email" required>
+    <input type="submit">
+  </form>
+
+    <h1>{{ myName }}</h1>
+    <p>Welcome to {{ title }}</p>
+
+  </div>
+
+{% endblock %}
